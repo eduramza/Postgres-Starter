@@ -14,6 +14,6 @@ data class User(
 object Users: Table() {
     val id: Column<String> = varchar("user_id", 200).primaryKey()
     val email: Column<String> = varchar("email", 80).uniqueIndex()
-    val password: Column<String> = varchar("password", 25)
+    val password: Column<String> = varchar("password", 64)
     val active: Column<Boolean> = bool("active")
 }
