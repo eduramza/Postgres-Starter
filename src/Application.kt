@@ -36,7 +36,7 @@ fun Application.module(testing: Boolean = false) {
         jwt("jwt") {
             verifier(jwtService.verifier)
 
-            realm = "emojiphrases app"
+            realm = "database stater app"
             validate{
                 val payload = it.payload
                 val claim = payload.getClaim("id")
